@@ -75,4 +75,10 @@ Al finalizar cada ejecución, Playwright genera automáticamente:
 
 * **Limitación en la gestión de cantidades del carrito (`QTY`):** Durante el diseño y ejecución de las pruebas en la vista del carrito (`/cart.html`), se detectó que la aplicación **no permite modificar ni incrementar la cantidad de unidades** de un producto ya agregado (el valor de `QTY` está bloqueado en `1` por defecto).
 * **Impacto en pruebas:** No es posible automatizar un caso de prueba para validar el recálculo de subtotales por múltiples unidades de un mismo ítem; únicamente se puede validar la adición de productos distintos al carrito o su eliminación mediante el botón **Remove**.
+
+*  **Anomalía visual / funcional en el selector de ordenamiento superior derecho (Combo Sort):**
+   * **Descripción:** En el encabezado del catálogo (`/inventory.html`), el menú desplegable de ordenamiento (*Product Sort Container*, ubicado en la esquina superior derecha) presenta problemas en su indicador visual (flecha del combo) y, al operar bajo el perfil `problem_user`, no ejecuta el reordenamiento de los productos al seleccionar opciones como *Price (low to high)* o *Name (Z to A)*.
+   * **Impacto:** Afecta la usabilidad (UI/UX) al no reflejar claramente el estado interactivo del desplegable y rompe la funcionalidad de filtrado/ordenamiento del catálogo.
+
+
  

@@ -7,6 +7,4 @@ Repositorio con la resolución del desafío técnico, incluyendo modelado y cons
 * **[Entregable SQL (DDL, DML y Consultas)](docs/entregable_sql.md):** Creación de tablas (`customerss`, `orders`, `order_items`), inserción de datos de prueba y consultas de negocio e integridad.
 * **[Pruebas Automatizadas Playwright y Hallazgos QA](docs/pruebas_playwright.md):** Estructura del proyecto E2E, casos de prueba, comandos de ejecución y observaciones funcionales detectadas.
 * **[Reporte de Defecto (Bug Report)](reporte_defecto.md):** Documentación detallada del fallo crítico detectado en el flujo de Checkout con `problem_user`.
-Usa el código con precaución.
-¡Y con eso tu repositorio queda impecable y listo para la revisión!
-Si ya lo guardaste, dime si quieres que hagamos el repaso rápido de preguntas técnicas sobre tu código SQL y Playwright para que vayas súper preparado a la siguiente etapa.
+

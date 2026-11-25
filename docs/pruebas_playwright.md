@@ -70,3 +70,9 @@ npx playwright install
 Al finalizar cada ejecución, Playwright genera automáticamente:
 * **Reporte HTML:** Disponible en `playwright-report/index.html`.
 * **Capturas y trazas (*Traces*):** Guardadas en la carpeta `test-results/` en caso de fallo para depuración paso a paso.
+
+## 7. Hallazgos y Observaciones Funcionales (QA)
+
+* **Limitación en la gestión de cantidades del carrito (`QTY`):** Durante el diseño y ejecución de las pruebas en la vista del carrito (`/cart.html`), se detectó que la aplicación **no permite modificar ni incrementar la cantidad de unidades** de un producto ya agregado (el valor de `QTY` está bloqueado en `1` por defecto).
+* **Impacto en pruebas:** No es posible automatizar un caso de prueba para validar el recálculo de subtotales por múltiples unidades de un mismo ítem; únicamente se puede validar la adición de productos distintos al carrito o su eliminación mediante el botón **Remove**.
+ 
